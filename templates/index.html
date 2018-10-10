@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+    First Page
+{% endblock %}
+
+{% block body %}
+<form action="{{ url_for('more')}}" method="post">
+    <input type ="text" name="name" placeholder="random">
+    <button>Submit</button>
+</form>
+{% endblock %}
